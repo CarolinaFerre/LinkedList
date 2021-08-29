@@ -1,0 +1,68 @@
+
+
+Las LinkedList (listas enlazadas) son muy similares en sintaxis a las ArrayList.
+
+Puedes cambiar fácilmente una ArrayList a una LinkedList cambiando el tipo de objeto.
+
+import java.util.LinkedList;
+
+public class MyClass{
+  public static void main (String[]args){
+    LinkedList<String> c=new LinkedList <String>();
+    c.add("Red");
+    c.add("Blue");
+    c.add("Green");
+    c.add("Orange");
+    c.remove("Green");
+    
+    System.out.println(c);
+    
+    }
+   }
+   
+   No puedes especificar una capacidad inicial para las LinkedList
+   
+   Ejemplo:
+   
+   LinkedList <String> list=new LinkedList <String>();
+   
+   list.add("Hey");
+   System.out.println(list.get(0));
+   
+   
+   
+   LinkedList vs.ArrayList
+   _______________________
+   
+   La diferencia más notable es la manera en que almacenan los objetos.
+   
+   La ArrayList es mejor para almacenar y acceder a los datos, ya que es similar a un arreglo normal.
+   
+   La LinkedList es mejor para manipular los datos, como al hacer muchas inserciones y borrados de elementos.
+   
+   Además de almacenar el objeto, la LinkedList almacena la dirección de memoria(o enlace) del elemento que sigue. Sin llamadas Listas
+   Enlazadas porque cada elemento contiene un enlace al elemento vecino.
+   
+   
+   Puedes utilizr el bucle for mejorado para iterar sobre sus elementos:
+   
+   LinkedList<String> c=new LinkedList<String>();
+   
+   c.add("Red");
+   c.add("Blue");
+   c.add("Green");
+   c.add("Orange");
+   c.remove("Green");
+   
+   for(String s:c){
+    System.out.println(s);
+    }
+    
+    
+    
+    En resumen:
+    
+    Utiliza ArrayList cuando necesites rápido acceos a tus datos.
+    Utiliza LinkedList cuando necesites hacer un gran número de insercciones y/o eliminaciones.
+    
+    
